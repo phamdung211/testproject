@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bài viết demo</title>
+    <title>Chúc mừng ngày Phụ nữ Việt Nam 20/10 🌹</title>
     <style>
       /* Reset & body */
       * {
@@ -14,8 +14,8 @@
       }
 
       body {
-        background: #f5f5f5;
-        color: #333;
+        background: linear-gradient(135deg, #ffe6f0, #ffd6e7);
+        color: #444;
         line-height: 1.6;
         padding: 20px;
       }
@@ -25,22 +25,34 @@
         max-width: 800px;
         background: #fff;
         margin: 40px auto;
-        border-radius: 12px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        box-shadow: 0 6px 25px rgba(255, 105, 180, 0.3);
         overflow: hidden;
+        animation: fadeIn 1.2s ease-in-out;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
       }
 
       /* Header */
       header {
-        background: linear-gradient(135deg, #007bff, #00bcd4);
+        background: linear-gradient(135deg, #ff80ab, #ffb6c1);
         color: white;
-        padding: 16px 24px;
+        padding: 24px;
         text-align: center;
       }
 
       header h1 {
-        font-size: 1.8rem;
-        letter-spacing: 0.5px;
+        font-size: 2.2rem;
+        letter-spacing: 1px;
       }
 
       /* Ảnh chính */
@@ -53,65 +65,117 @@
       /* Nội dung bài viết */
       .article-content {
         padding: 24px;
+        text-align: center;
+        background: #fff5f8;
       }
 
       .article-content h2 {
         margin-bottom: 12px;
-        color: #222;
-        font-size: 1.4rem;
+        color: #ff4d88;
+        font-size: 1.8rem;
       }
 
       .article-content p {
         margin-bottom: 16px;
         text-align: justify;
+        color: #555;
+        font-size: 1.05rem;
       }
 
       /* Footer */
       footer {
         padding: 16px;
         text-align: center;
-        background: #fafafa;
-        border-top: 1px solid #eee;
-        font-size: 0.9rem;
-        color: #666;
+        background: #ffeaf1;
+        border-top: 1px solid #ffd6e7;
+        font-size: 0.95rem;
+        color: #777;
+      }
+
+      /* Hiệu ứng trái tim */
+      .hearts {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        pointer-events: none;
+        z-index: 10;
+      }
+
+      .heart {
+        position: absolute;
+        color: #ff6699;
+        font-size: 22px;
+        animation: float 6s linear infinite;
+        opacity: 0.8;
+      }
+
+      @keyframes float {
+        0% {
+          transform: translateY(100vh) scale(0.8);
+          opacity: 1;
+        }
+        100% {
+          transform: translateY(-10vh) scale(1.2);
+          opacity: 0;
+        }
       }
     </style>
   </head>
   <body>
     <div class="article-container">
       <header>
-        <h1>Tin tức hôm nay 🌤️</h1>
+        <h1>🌹 Chúc mừng ngày Phụ nữ Việt Nam 20/10 🌹</h1>
       </header>
 
-      <!-- Ảnh minh họa -->
+      <!-- Ảnh hoa hồng -->
       <img
         class="article-image"
-        src="assets/phamngocanh.png"
-        alt="Ảnh minh họa"
+        src="assets/rose-bouquet.jpg"
+        alt="Bó hoa hồng chúc mừng 20/10"
       />
 
       <div class="article-content">
-        <h2>Tiêu đề bài viết demo</h2>
+        <h2>💖 Gửi đến những bông hồng xinh đẹp 💖</h2>
         <p>
-          Đây là đoạn nội dung mẫu của một bài báo đơn giản. Bạn có thể thay thế
-          bằng nội dung thật của mình. Mục tiêu của trang này là trình bày nội
-          dung dễ đọc, kèm ảnh minh họa rõ ràng và bố cục hiện đại.
+          Nhân ngày Phụ nữ Việt Nam 20/10, xin gửi những lời chúc ngọt ngào và
+          trân trọng nhất đến phái đẹp — những người luôn mang lại yêu thương,
+          sự dịu dàng và sức mạnh cho cuộc sống này.
         </p>
-
         <p>
-          Khi bạn triển khai trang này lên GitHub Pages, mọi người có thể truy
-          cập bằng đường link công khai để xem ảnh và nội dung bạn đăng. Bạn
-          cũng có thể thay ảnh minh họa bằng file của riêng bạn, chỉ cần đổi
-          đường dẫn trong thuộc tính <code>src</code>.
+          Chúc các bạn luôn xinh tươi như những đóa hồng, rạng rỡ trong công
+          việc và hạnh phúc trong cuộc sống. Mỗi ngày trôi qua đều là một ngày
+          đặc biệt — vì có các bạn!
         </p>
-
         <p>
-          Nếu muốn thêm nhiều bài, bạn có thể sao chép đoạn
-          <code>.article-container</code> này nhiều lần trong file HTML.
+          🌸 <strong>Chúc mừng ngày Phụ nữ Việt Nam 20/10!</strong> 🌸 <br />
+          Mãi là đóa hồng đẹp nhất trong tim của những người yêu thương bạn 💐
         </p>
       </div>
 
-      <footer>© 2025 - Trang demo của Dũng | Viết bằng HTML & CSS</footer>
+      <footer>© 2025 - Trang chúc mừng 20/10 từ Dũng 💞</footer>
     </div>
+
+    <!-- Hiệu ứng trái tim bay -->
+    <div class="hearts" id="hearts"></div>
+
+    <script>
+      const heartsContainer = document.getElementById("hearts");
+
+      function createHeart() {
+        const heart = document.createElement("div");
+        heart.classList.add("heart");
+        heart.style.left = Math.random() * 100 + "vw";
+        heart.style.animationDuration = Math.random() * 2 + 4 + "s";
+        heart.innerHTML = "💖";
+        heartsContainer.appendChild(heart);
+
+        setTimeout(() => heart.remove(), 6000);
+      }
+
+      setInterval(createHeart, 400);
+    </script>
   </body>
 </html>
